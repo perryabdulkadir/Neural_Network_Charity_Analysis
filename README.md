@@ -6,7 +6,8 @@ Columbia Data Science Module 19
 Using data from a foundation on loans they had given to various charity groups, I trained a neural network to predict the likelihood of a given loan leading to a successful outcome.
 
 ### Resources
-Software/tools: Jupyter Notebook, Python, SKLearn, Pandas, Tensorflow
+Software/languages: Jupyter Notebook, Python
+Python packages: SKLearn, Pandas, Tensorflow
 
 Data: charity_data.csv (located in the Resources folder of this repository)
 
