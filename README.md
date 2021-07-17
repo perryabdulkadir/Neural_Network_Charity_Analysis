@@ -11,7 +11,7 @@ Python packages: SKLearn, Pandas, Tensorflow
 
 [Data:](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv) charity_data.csv 
 
-## Results
+## Analaysis 
 
 ### Data Preprocessing
 
@@ -25,6 +25,19 @@ I used the following features: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, US
 
 * **Columns to drop**
 I dropped EIN and NAME as they are arbitrary markers and not relevant to the outcome being measured.
+
+```
+application_df = application_df.drop(columns = ['EIN', 'NAME'])
+application_df
+```
+
+I then proceeded to the binning process. 
+
+![binning1.PNG](Resources/binning1.PNG)
+
+![binning2.PNG](Resources/binning2.PNG)
+
+## Results
 
 ### Compiling, Training, and Evaluating the Model
 
