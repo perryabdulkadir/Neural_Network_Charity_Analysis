@@ -51,6 +51,37 @@ application_df.head()
 The final pre-processing step was splitting data into features and target arrays, splitting into testing and training datasets, and scaling.
 ![splitting.PNG](Resources/splitting.PNG)
 
+### Model Training
+I will demonstrate the general model building method with a neural network model. First, I created the model by specifying the number of layers and hidden nodes per layer, as well as the activation functions for each layer.
+
+```
+# Define the model - deep neural net, i.e., the number of input features and hidden nodes for each layer.
+#  "A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs."
+number_input_features = len(X_train[0])
+hidden_nodes_layer1 =  80
+hidden_nodes_layer2 = 30
+
+nn = tf.keras.models.Sequential()
+
+# First hidden layer
+nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer1, input_dim=number_input_features, activation="relu"))
+
+# Second hidden layer
+nn.add(tf.keras.layers.Dense(units=hidden_nodes_layer2, activation="relu"))
+
+# Output layer
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+
+# Check the structure of the model
+nn.summary()
+```
+Next, I compiled the model, imported OS and model checkpoint, and ran 100 epochs.
+
+![training.PNG](Resources/training.PNG)
+
+I calculated the model accuracy and loss. 
+![loss.PNG](Resources/loss.PNG)
+
 
 ## Results
 
