@@ -11,13 +11,13 @@ Python packages: SKLearn, Pandas, Tensorflow
 
 [Data:](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/tree/main/Resources/Raw%20Data) charity_data.csv 
 
-## Analaysis 
+## Analysis 
 
 ### Data Preprocessing
 
 * **Target variable**
 
-The target variable is straighforward, as the foundation has already gone through and evaluated each loan as being either successful or unsuccesful. The target variable is IS_SUCCESSFUL, where 1 is "yes" and 0 is "no."
+The target variable is straightforward, as the foundation has already gone through and evaluated each loan as being either successful or unsuccessful. The target variable is IS_SUCCESSFUL, where 1 is "yes" and 0 is "no."
 
 * **Features**
 
@@ -41,7 +41,7 @@ I created a list of categorical variables and created a OneHotEncoder instance.
 
 ![cat_vars.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/cat_vars.png)
 
-Next, I merged the OneHot encoded features dropped and dropped the originals.
+Next, I merged the OneHot encoded features and dropped the originals.
 
 ```
 application_df = application_df.merge(encode_df,left_index=True, right_index=True)
@@ -106,7 +106,7 @@ Initially, model accuracy was below the .75 threshold, at .69.
 ![model1.PNG](Resources/model1.PNG)
 
 * **Were you able to achieve the target model performance?**
-No - I tried 5 different ways to increase model performance. First, I dropped STATUS and SPECIAL_CONSIDERATIONS because both of these features were overwhelmingly skewed toward one response. I ran the model again with both dropped, just STATUS dropped, and just SPECIAL_CONSIDERATiONS dropped. In each case, model performance suffered compared to my original model. I then increased the number of neurons, but performance again suffered. I added one more hidden layer, but performance did not improve. Finally, I tried running the model again with tanh, leakRelu, and sigmoid activation functions, all with no improvement over the original or a loss of accuracy. 
+No - I tried 5 different ways to increase model performance. First, I dropped STATUS and SPECIAL_CONSIDERATIONS because both of these features were overwhelmingly skewed toward one response. I ran the model again with both dropped, just STATUS dropped, and just SPECIAL_CONSIDERATiONS dropped. In each case, model performance suffered compared to my original model. I then increased the number of neurons, but performance again suffered. I added one more hidden layer, but performance did not improve. Finally, I tried running the model again with tanh, leakyRelu, and sigmoid activation functions, all with no improvement over the original or a loss of accuracy. 
 
 ## Summary
 Overall, I was able to achieve fair model performance, but I believe a better model could be constructed. Going forward, I would suggest using a supervised classification machine learning model to see if it could produce a higher accuracy result. I believe this is well-suited for such a model because the target variable is so straightforward.
