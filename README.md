@@ -80,8 +80,18 @@ Next, I compiled the model, imported OS and model checkpoint, and ran 100 epochs
 ![training.PNG](Resources/training.PNG)
 
 I calculated the model accuracy and loss. 
+
 ![loss.PNG](Resources/loss.PNG)
 
+I also plotted loss and accuracy per epoch.
+
+![chart.PNG](Resources/chart.PNG)
+
+Lastly, I saved a copy of the model as a .h5 file. 
+
+```
+nn.save("AlphabetSoupCharity.h5")
+```
 
 ## Results
 
