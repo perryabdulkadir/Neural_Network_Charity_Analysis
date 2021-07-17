@@ -1,6 +1,5 @@
 # Neural Network Charity Analysis
-
-Columbia Data Science Module 19
+Optimizing neural networks to predict the success of loans given to non-profit organizations
 
 ## Overview
 Using data from a foundation on loans they had given to various charity groups, I trained a neural network to predict the likelihood of a given loan leading to a successful outcome.
