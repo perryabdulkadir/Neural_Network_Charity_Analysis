@@ -48,6 +48,9 @@ application_df = application_df.merge(encode_df,left_index=True, right_index=Tru
 application_df = application_df.drop(application_cat,1)
 application_df.head()
 ```
+The final pre-processing step was splitting data into features and target arrays, splitting into testing and training datasets, and scaling.
+![splitting.PNG](Resources/splitting.PNG)
+
 
 ## Results
 
