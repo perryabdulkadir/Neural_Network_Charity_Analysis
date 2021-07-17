@@ -6,6 +6,7 @@ Using data from a foundation on loans they had given to various charity groups, 
 
 ### Resources
 Software/languages: Jupyter Notebook, Python
+
 Python packages: SKLearn, Pandas, Tensorflow
 
 [Data:](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/tree/main/Resources/Raw%20Data) charity_data.csv 
