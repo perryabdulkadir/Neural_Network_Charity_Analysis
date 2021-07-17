@@ -37,6 +37,18 @@ I then proceeded to the binning process.
 
 ![binning2.PNG](Resources/binning2.PNG)
 
+I created a list of categorical variables and created a OneHotEncoder instance. 
+
+![cat_vars.PNG](Resources/cat_vars.PNG)
+
+Next, I merged the OneHot encoded features dropped and dropped the originals.
+
+```
+application_df = application_df.merge(encode_df,left_index=True, right_index=True)
+application_df = application_df.drop(application_cat,1)
+application_df.head()
+```
+
 ## Results
 
 ### Compiling, Training, and Evaluating the Model
