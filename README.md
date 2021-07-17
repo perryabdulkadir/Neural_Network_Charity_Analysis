@@ -9,7 +9,7 @@ Using data from a foundation on loans they had given to various charity groups, 
 Software/languages: Jupyter Notebook, Python
 Python packages: SKLearn, Pandas, Tensorflow
 
-[Data:](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv) charity_data.csv 
+[Data:](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/tree/main/Resources/Raw%20Data) charity_data.csv 
 
 ## Analaysis 
 
