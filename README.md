@@ -108,3 +108,12 @@ No - I tried 5 different ways to increase model performance. First, I dropped ST
 
 ## Summary
 Overall, I was able to achieve fair model performance, but I believe a better model could be constructed. Going forward, I would suggest using a supervised classification machine learning model to see if it could produce a higher accuracy result. I believe this is well-suited for such a model because the target variable is so straightforward.
+
+
+-----
+
+### **Contact:**
+
+**Email:** perry.abdulkadir@alumni.harvard.edu
+
+**Linkedin:** https://www.linkedin.com/in/perry-abdulkadir-6a255199/
