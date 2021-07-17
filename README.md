@@ -32,13 +32,13 @@ application_df
 
 I then proceeded to the binning process. 
 
-![binning1.PNG](Resources/binning1.PNG)
+![binning1.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/binning1.png)
 
-![binning2.PNG](Resources/binning2.PNG)
+![binning2.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/binning2.png)
 
 I created a list of categorical variables and created a OneHotEncoder instance. 
 
-![cat_vars.PNG](Resources/cat_vars.PNG)
+![cat_vars.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/cat_vars.png)
 
 Next, I merged the OneHot encoded features dropped and dropped the originals.
 
@@ -48,7 +48,7 @@ application_df = application_df.drop(application_cat,1)
 application_df.head()
 ```
 The final pre-processing step was splitting data into features and target arrays, splitting into testing and training datasets, and scaling.
-![splitting.PNG](Resources/splitting.PNG)
+![splitting.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/splitting.png)
 
 ### Model Training
 I will demonstrate the general model building method with a neural network model. First, I created the model by specifying the number of layers and hidden nodes per layer, as well as the activation functions for each layer.
@@ -76,15 +76,15 @@ nn.summary()
 ```
 Next, I compiled the model, imported OS and model checkpoint, and ran 100 epochs.
 
-![training.PNG](Resources/training.PNG)
+![training.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/training.png)
 
 I calculated the model accuracy and loss. 
 
-![loss.PNG](Resources/loss.PNG)
+![loss.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/loss.png)
 
 I also plotted loss and accuracy per epoch.
 
-![chart.PNG](Resources/chart.PNG)
+![chart.PNG](https://github.com/perryabdulkadir/Neural_Network_Charity_Analysis/blob/main/Resources/chart.png)
 
 Lastly, I saved a copy of the model as a .h5 file. 
 
