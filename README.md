@@ -101,6 +101,7 @@ I used 2 layers initially to prevent overfitting. I also kept the initial number
 
 * **Were you able to achieve the target model performance?**
 Initially, model accuracy was below the .75 threshold, at .69. 
+
 ![model1.PNG](Resources/model1.PNG)
 
 * **Were you able to achieve the target model performance?**
